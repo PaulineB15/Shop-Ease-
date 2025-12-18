@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop Ease</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header> Shop Ease </header>
+
+  <main>
+    <h1>Bienvenue sur notre boutique</h1>
+
+    <label>
+      <input type="text" id="rechercher" placeholder="Chercher un produit">
+    </label>
+
+    <button id="reset">Réinitialiser</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Nom du produit</th>
+          <th>Prix</th>
+          <th>Suppression</th>
+        </tr>
+      </thead>
+
+      <! Le tableau n'est pas rempli en HTML car il le sera en JS!>
+      <tbody id="tableauProduits">
+      </tbody>
+    </table>
+
+      <p>Total : <span id="total-price">0</span> €</p>
+  </main>
+
+  <script src="ShopEase.js"></script>
+</body>
+</html>
